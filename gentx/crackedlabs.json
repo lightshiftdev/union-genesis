@@ -1,0 +1,55 @@
+{
+    "body": {
+        "messages": [
+            {
+                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
+                "description": {
+                    "moniker": "Cracked_Labs",
+                    "identity": "69E41BBEC526BB78",
+                    "website": "https://www.crackedlabs.xyz",
+                    "security_contact": "nodes@crackedlabs.xyz",
+                    "details": "Invite only incubator for degen builders who print."
+                },
+                "commission": {
+                    "rate": "0.050000000000000000",
+                    "max_rate": "0.100000000000000000",
+                    "max_change_rate": "0.050000000000000000"
+                },
+                "min_self_delegation": "1",
+                "delegator_address": "",
+                "validator_address": "unionvaloper1hncxxflll786mqxvk6eg3rth5lrgm0w24gpj2a",
+                "pubkey": {
+                    "@type": "/cosmos.crypto.bn254.PubKey",
+                    "key": "3Ow73Dqgbha23AcjQp/MgRfzZpksTrRADRND8iToi+w="
+                },
+                "value": { "denom": "upoa", "amount": "1" }
+            }
+        ],
+        "memo": "605dbaf20acc30a93edd59bef4ca23452f8f20fa@135.181.249.130:26656",
+        "timeout_height": "0",
+        "extension_options": [],
+        "non_critical_extension_options": []
+    },
+    "auth_info": {
+        "signer_infos": [
+            {
+                "public_key": {
+                    "@type": "/cosmos.crypto.secp256k1.PubKey",
+                    "key": "Au+ynvNJi1lMEa5XPbvzQUhTVPfawtoJtbhpzgah5S8i"
+                },
+                "mode_info": { "single": { "mode": "SIGN_MODE_DIRECT" } },
+                "sequence": "0"
+            }
+        ],
+        "fee": {
+            "amount": [],
+            "gas_limit": "200000",
+            "payer": "",
+            "granter": ""
+        },
+        "tip": null
+    },
+    "signatures": [
+        "gn/6IdVtKe3ti0a6pZMAjTHi0rUVV6OTO7nUVttDX1N9ojnFcS0YGxcatb5iRSA1VwwwW27aNq4J804BfHWYYg=="
+    ]
+}
