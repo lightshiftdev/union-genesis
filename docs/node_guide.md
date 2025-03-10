@@ -11,9 +11,9 @@ The requirements for mainnet node operation are the same as the [Union Testnet n
 # Running the Node
 There are two primary methods of running the node: the `uniond` binary or Unionvisor. The `uniond` binary is the Cosmos SDK based binary with statically linked libraries. `uniond` is the most flexible option. Unionvisor is our in-house equivalent to Cosmovisor. Unionvisor may not be as flexible as the raw binary, but has support for nix flake configurations - enabling reliable deterministic deployments. Unionvisor is also released as a docker image which bundles all versions of the binary needed to join the network from genesis.
 
-The genesis version of `uniond` is [v1.0.0-rc1-alpha1](https://github.com/unionlabs/union/releases/tag/v1.0.0-rc1.alpha1)
+The genesis version of `uniond` is [v1.0.0-rc1.alpha1](https://github.com/unionlabs/union/releases/tag/v1.0.0-rc1.alpha1)
 
-The genesis version of Unionvisor is TBD
+The genesis version of Unionvisor is [v1.0.0-rc1.alpha1](https://github.com/unionlabs/union/releases/tag/v1.0.0-rc1.alpha1)
 
 You're welcome to try and run `uniond` with Cosmovisor, but we will not supply official support for this.
 ## Uniond
