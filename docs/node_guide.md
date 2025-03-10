@@ -104,9 +104,8 @@ timeout_precommit_delta = "500ms"
 timeout_commit = "5s"
 ```
 #### Seeds
-*awaiting Lavender.Five's seed nodes*
 ```toml
-seeds = ""
+seeds = "20e1000e88125698264454a884812746c2eb4807@seeds.lavenderfive.com:24656"
 ```
 #### Seed Mode
 Validator nodes and seed nodes should be exclusive from one another. If you're configuring a validator, please ensure `seed_mode` is set to false.
