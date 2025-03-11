@@ -8,6 +8,21 @@ The requirements for mainnet node operation are the same as the [Union Testnet n
 - 500 GB Storage
 - x86_64 or aarch64 architecture
 
+# Genesis Transactions
+
+To ensure genesis transactions are created correctly, the following parameters should be consistent among all transactions:
+
+- `min-self-delegation` should be set to `1000000`
+- `amount` (arg2) should be `1000000000000upoa`
+- `chain-id` should be `union-1`
+- `commission-rate` `0upoa`
+
+An example of a correct genesis transaction:
+```sh
+uniond --home $UNIOND_HOME genesis gentx $KEY_NAME 1000000000000upoa --min-self-delegation 1000000 --chain-id union-1 --commission-rate 0    
+```
+Where `UNIOND_HOME` and `KEY_NAME` are specific to your own node.
+
 # Running the Node
 There are two primary methods of running the node: the `uniond` binary or Unionvisor. The `uniond` binary is the Cosmos SDK based binary with statically linked libraries. `uniond` is the most flexible option. Unionvisor is our in-house equivalent to Cosmovisor. Unionvisor may not be as flexible as the raw binary, but has support for nix flake configurations - enabling reliable deterministic deployments. Unionvisor is also released as a docker image which bundles all versions of the binary needed to join the network from genesis.
 
